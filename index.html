@@ -10,8 +10,18 @@
     <form>
         <h1>Create Account</h1>
         <label for="nombre">Nombre<br/>
-            <input type="text"/>
-        </label>
+            <input type="text" id="nombre"/>
+        </label><br/>
+        <label for="email">Email<br/>
+            <input type="email" id="email"/>
+        </label><br/>
+        <label for="clave">Clave<br/>
+            <input type="password" id="clave" maxlength="8"/>
+        </label><br/>
+        <label for="confirmarClabe">Confirme su clave<br/>
+            <input type="password" id="confirmarClave" maxlength="8"/>
+        </label><br/>
+        <input type="submit" id="enviar"/>
     </form>
 </body>
 </html>
