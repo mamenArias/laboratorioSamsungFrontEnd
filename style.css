@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: #242933;
+    align-items: center;
+    font-family: 'Kanit';
+    color: #abb9df;
+}
+
+h1{
+    font-size: 35px;
+    margin-left: 12%;
+    display: block;
+}
+
+.formulario {
+    background-color: #2f3644;
+    max-width: 400px;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: #393f55;
+    margin: auto;
+}
+
+label{
+    font-size: 15;
+    font-weight: bold;
+    display: block;
+}
+
+span{
+    display: block;
+    margin-top: 5px;
+    width: 85%;
+}
+
+.contenedorElementoForm{
+    margin-left: 12%;
+    height: 95px;
+    display: block;
+}
+
+.elementoFormulario{
+    background-color: #ffffff;
+    width: 85%;
+    height: 35px;
+    border-radius: 3px;
+    margin-top: 5px;
+    border: none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: block;
+}
+
+.mensajeError{
+    color: rgb(255, 55, 55);
+    font-size: 13px;
+}
+
+#botonEnviar{
+    background-color: #6c63ff;
+    color: #f2f2ff;
+    border-radius: 5px;
+    width: 87%;
+    height: 40px;
+    margin-top: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.valido{
+    border: 2px solid rgb(8, 180, 8);
+}
+
+.invalido{
+    border: 2px solid rgb(255, 55, 55);
+}
+
+.iconoError{
+    background-image: url('images/error-icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: 275px;
+    background-position-y: 9px;
+    background-size: 20px;
+}
+
+.iconoSuccess{
+    background-image: url('images/success-icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: 275px;
+    background-position-y: 9px;
+    background-size: 20px;
+}

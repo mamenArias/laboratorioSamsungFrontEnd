@@ -4,24 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <script src="index.js" type="text/javascript"></script> 
     <title>Laboratorio Nivel 2 Desarrollo Front-End</title>
 </head>
 <body>
-    <form>
+    
+    <div class="formulario">
         <h1>Create Account</h1>
-        <label for="nombre">Nombre<br/>
-            <input type="text" id="nombre"/>
-        </label><br/>
-        <label for="email">Email<br/>
-            <input type="email" id="email"/>
-        </label><br/>
-        <label for="clave">Clave<br/>
-            <input type="password" id="clave" maxlength="8"/>
-        </label><br/>
-        <label for="confirmarClabe">Confirme su clave<br/>
-            <input type="password" id="confirmarClave" maxlength="8"/>
-        </label><br/>
-        <input type="submit" id="enviar"/>
-    </form>
+        <form>
+            <div class="contenedorElementoForm">
+                <label for="nombre">Nombre<br/>
+                    <input type="text" id="nombre" class="elementoFormulario"/>
+                </label>
+                <span id="errorNombre" class="mensajeError"></span>
+            </div>
+            <div class="contenedorElementoForm">
+                <label for="email">Email<br/>
+                    <input type="email" id="email" class="elementoFormulario"/>
+                </label>
+                <span id="errorEmail" class="mensajeError"></span>
+            </div>
+            <div class="contenedorElementoForm">
+                <label for="clave">Clave<br/>
+                    <input type="password" id="clave" maxlength="8" class="elementoFormulario"/>
+                </label>
+                <span id="errorClave" class="mensajeError"></span>
+            </div>
+            <div class="contenedorElementoForm">
+                <label for="confirmarClave">Confirme su clave<br/>
+                    <input type="password" id="confirmarClave" maxlength="8" class="elementoFormulario"/>
+                </label>
+                <span id="errorClaveIncorrecta" class="mensajeError"></span>
+            </div>
+            <div class="contenedorElementoForm">
+                <input type="submit" value="ENVIAR" id="botonEnviar" onclick="return validarNombre(), validarEmail(), validarClave(), validarClaveIgual()"/>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
