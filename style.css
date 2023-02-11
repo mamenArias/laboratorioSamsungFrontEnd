@@ -73,11 +73,11 @@ span{
 }
 
 .valido{
-    border: 2px solid rgb(8, 180, 8);
+    border: 2px solid #4ECA64;
 }
 
 .invalido{
-    border: 2px solid rgb(255, 55, 55);
+    border: 2px solid #DB5A5A;
 }
 
 .iconoError{

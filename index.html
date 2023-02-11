@@ -27,18 +27,18 @@
             </div>
             <div class="contenedorElementoForm">
                 <label for="clave">Clave<br/>
-                    <input type="password" id="clave" maxlength="8" class="elementoFormulario"/>
+                    <input type="password" id="clave" class="elementoFormulario"/>
                 </label>
                 <span id="errorClave" class="mensajeError"></span>
             </div>
             <div class="contenedorElementoForm">
                 <label for="confirmarClave">Confirme su clave<br/>
-                    <input type="password" id="confirmarClave" maxlength="8" class="elementoFormulario"/>
+                    <input type="password" id="confirmarClave" class="elementoFormulario"/>
                 </label>
                 <span id="errorClaveIncorrecta" class="mensajeError"></span>
             </div>
             <div class="contenedorElementoForm">
-                <input type="submit" value="ENVIAR" id="botonEnviar" onclick="return validarNombre(), validarEmail(), validarClave(), validarClaveIgual()"/>
+                <input type="submit" value="ENVIAR" id="botonEnviar" onclick="return validarNombre(), validarEmail(), validarClave(), validarClaveIgual(), validarFormulario()"/>
             </div>
         </form>
     </div>
